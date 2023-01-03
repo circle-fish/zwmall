@@ -1,0 +1,101 @@
+@charset "UTF-8";
+/* 颜色变量 */
+/* 行为相关颜色 */
+/* 文字基本颜色 */
+/* 背景颜色 */
+/* 边框颜色 */
+/* 页面宽度 */
+.date-picker .calendar-header, .date-picker .calendar-header .left, .date-picker .calendar-header .center, .date-picker .calendar-header .right, .date-picker .calendar-week .item, .date-picker .calendar-body .day {
+  display: flex;
+  align-items: center;
+}
+.date-picker {
+  width: 400px;
+  height: 430px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 3;
+  margin: auto;
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 4px;
+  box-shadow: 0 2px 12px 0 rgba(0, 0, 0, 0.1);
+}
+.date-picker .calendar-header {
+  position: relative;
+  padding-top: 20px;
+  justify-content: space-between;
+}
+.date-picker .calendar-header .left,
+.date-picker .calendar-header .center,
+.date-picker .calendar-header .right {
+  color: #303133;
+}
+.date-picker .calendar-header .i-left,
+.date-picker .calendar-header .i-right {
+  font-size: 12px;
+  font-weight: bold;
+  margin: 0 15px;
+  display: block;
+  margin-top: 3px;
+}
+.date-picker .calendar-header .date-label {
+  font-size: 16px;
+  font-weight: 500;
+  padding: 0 5px;
+  line-height: 22px;
+  text-align: center;
+  color: #606266;
+}
+.date-picker .calendar-header .btn {
+  cursor: pointer;
+}
+.date-picker .calendar-header .btn:hover {
+  color: #ff6700;
+}
+.date-picker .calendar-header .i-close {
+  position: absolute;
+  right: 0px;
+  top: -5px;
+  cursor: pointer;
+  font-size: 12px;
+  font-weight: bold;
+  color: #B0B0B0;
+}
+.date-picker .calendar-week {
+  margin-top: 15px;
+  display: flex;
+  border-bottom: 1px solid #ebeef5;
+}
+.date-picker .calendar-week .item {
+  width: 57px;
+  height: 55px;
+  text-align: center;
+  color: #606266;
+  justify-content: center;
+}
+.date-picker .calendar-body {
+  display: flex;
+  flex-wrap: wrap;
+  width: 400px;
+  height: 340px;
+  overflow: hidden;
+}
+.date-picker .calendar-body .day {
+  width: 57px;
+  height: 55px;
+  color: #606266;
+  justify-content: center;
+  cursor: pointer;
+}
+.date-picker .calendar-body .day:hover, .date-picker .calendar-body .day.active {
+  color: #ff6700;
+}
+.date-picker .calendar-body .day.disabled {
+  color: #c0c4cc;
+  cursor: default;
+}
+

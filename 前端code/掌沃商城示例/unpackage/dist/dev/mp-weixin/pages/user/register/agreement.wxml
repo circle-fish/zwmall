@@ -1,0 +1,1 @@
+<web-view style="{{$root.s0}}" src="https://static.account.xiaomi.com/html/agreement/user/zh_CN.html"></web-view>

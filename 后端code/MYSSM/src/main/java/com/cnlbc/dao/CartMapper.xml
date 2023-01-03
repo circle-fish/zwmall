@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.cnlbc.dao.CartMapper">
+    <select id="findspecial" parameterType="com.cnlbc.domain.Cart" resultType="com.cnlbc.domain.Cart">
+        select * from cart
+        <where>
+            <if test="id!=0">
+                and id = #{id}
+            </if>
+            <if test="userId!=0">
+                and userId = #{userId}
+            </if>
+            <if test="goodsId!=0">
+                and introduction = #{introduction}
+            </if>
+            <if test="skuId!=0">
+                and skuId = #{logoUrl}
+            </if>
+            <if test="name!=null">
+                and name = #{name}
+            </if>
+            <if test="thumbUrl!=null">
+                and thumbUrl = #{thumbUrl}
+            </if>
+            <if test="price!=0">
+                and price = #{price}
+            </if>
+            <if test="count!=0">
+                and count = #{count}
+            </if>
+            <if test="createTime!=null">
+                and createTime = #{createTime}
+            </if>
+            <if test="updateTime!=updateTime">
+                and updateTime = #{createTime}
+            </if>
+        </where>
+    </select>
+    <insert id="newcart" parameterType="com.cnlbc.domain.Cart">
+        insert into cart VALUES(null ,#{userId},#{goodsId},#{skuId},#{name},#{thumbUrl},#{price},#{count},#{checked},#{createTime},#{updateTime})
+    </insert>
+
+    <update id="updatecart" parameterType="com.cnlbc.domain.Cart" >
+        update cart set
+        <if test="count!=0">
+            count = #{count},
+        </if>
+        <if test="updateTime!=null">
+            updateTime = #{updateTime},
+        </if>
+        id = #{id} where id = #{id}
+    </update>
+
+    <update id="updatecheck" parameterType="com.cnlbc.domain.Cart" >
+        update cart set updateTime = #{updateTime}, checked = #{checked}  where id = #{id}
+    </update>
+
+    <delete id="deletecart" parameterType="java.lang.Integer">
+        delete  from cart where id = #{id}
+    </delete>
+</mapper>

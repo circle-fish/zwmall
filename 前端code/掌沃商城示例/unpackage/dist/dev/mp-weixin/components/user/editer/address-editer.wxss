@@ -1,0 +1,88 @@
+@charset "UTF-8";
+/* 颜色变量 */
+/* 行为相关颜色 */
+/* 文字基本颜色 */
+/* 背景颜色 */
+/* 边框颜色 */
+/* 页面宽度 */
+.form-wrap .form-row {
+  display: flex;
+  align-items: center;
+}
+.form-wrap {
+  width: 100%;
+  padding: 20px;
+  position: relative;
+}
+.form-wrap .form-row {
+  margin-bottom: 14px;
+}
+.form-wrap .form-row .form-item {
+  flex: 1;
+  position: relative;
+  border: 1px solid #e0e0e0;
+  transition: border-color .2s linear;
+}
+.form-wrap .form-row .form-item:hover {
+  border-color: #B0B0B0;
+}
+.form-wrap .form-row .form-item.focus {
+  border-color: #ff6700;
+}
+.form-wrap .form-row .form-item.focus .placeholder {
+  font-size: 12px;
+  top: -11px;
+  color: #ff6700;
+}
+.form-wrap .form-row .form-item.active .placeholder {
+  font-size: 12px;
+  top: -11px;
+}
+.form-wrap .form-row .form-item.address,
+.form-wrap .form-row .form-item.address .uni-input-input {
+  cursor: pointer;
+}
+.form-wrap .form-row .form-item.long-text {
+  display: flex;
+}
+.form-wrap .form-row .form-item.long-text textarea {
+  height: 3em;
+  resize: vertical;
+  padding: 10px 16px;
+  flex: 1;
+}
+.form-wrap .form-row .form-item:nth-child(2) {
+  margin-left: 14px;
+}
+.form-wrap .form-row .form-item input {
+  z-index: 2;
+  height: 40px;
+  padding: 0 16px;
+  line-height: 40px;
+}
+.form-wrap .form-row .form-item .placeholder {
+  position: absolute;
+  left: 12px;
+  top: 11px;
+  z-index: 1;
+  padding: 0 3px;
+  line-height: 18px;
+  background-color: #ffffff;
+  color: #b0b0b0;
+  cursor: text;
+  transition: all .2s linear;
+}
+.form-wrap .form-row .form-item .i-right {
+  position: absolute;
+  top: 50%;
+  right: 6px;
+  height: 24px;
+  line-height: 24px;
+  margin-top: -12px;
+  font-size: 18px;
+  color: #b0b0b0;
+  font-weight: bold;
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+}
+

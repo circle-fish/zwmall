@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.cnlbc.dao.OrderMapper">
+
+
+    <insert id="saveorder" parameterType="com.cnlbc.domain.Order">
+        insert into `order` VALUES(null,#{orderNo},#{userId},#{status},#{goodsAmount},#{expressFee},#{totalAmount},#{discountAmount},#{payAmount},#{payMode},#{payPlatform},#{ipAddress},#{paymentNo},#{remark},#{createTime},#{updateTime})
+    </insert>
+
+    <insert id="saveordergoods" parameterType="com.cnlbc.domain.Order_goods">
+        insert into `order_goods` values(null,#{orderNo},#{goodsId},#{skuId},#{name},#{thumbUrl},#{price},#{count},#{amount},#{scoreStatus},#{score},#{comment},#{photoUrls},#{createTime},#{updateTime});
+    </insert>
+
+    <insert id="saveorderaddress" parameterType="com.cnlbc.domain.Order_address">
+        insert into `order_address` values(null,#{orderNo},#{consignee},#{phone},#{province},#{city},#{district},#{address},#{updateTime});
+    </insert>
+
+
+    <select id="OrdersList" parameterType="com.cnlbc.domain.Order" resultType="com.cnlbc.domain.Order">
+        select * from `order` where userId = #{userId}
+    </select>
+
+    <select id="OrdergoodsList" parameterType="com.cnlbc.domain.Order_goods" resultType="com.cnlbc.domain.Order_goods">
+        select * from `order_goods` where orderNo = #{orderNo}
+    </select>
+
+    <select id="getaddressbyid" parameterType="com.cnlbc.domain.User_address" resultType="com.cnlbc.domain.User_address">
+        select * from `user_address` where id = #{Id}
+    </select>
+
+
+
+    <select id="OrderdetailsList" parameterType="com.cnlbc.domain.Order_details" resultType="com.cnlbc.domain.Order_details">
+        select `order`.id,consignee,phone,province,city,district,address,goodsAmount,expressFee,discountAmount,payAmount,payMode,createTime,`order`.orderNo from `order`,order_address where `order`.orderNo= #{orderNo} and `order_address`.orderNo= #{orderNo};
+    </select>
+
+
+    <update id="updateorder" parameterType="com.cnlbc.domain.Order">
+        update `order` set
+        <if test="userId!=null">userId = #{userId},</if>
+        <if test="status!=null">status = #{status},</if>
+        <if test="goodsAmount!=null">goodsAmount = #{goodsAmount},</if>
+        <if test="expressFee!=null">expressFee = #{expressFee},</if>
+        <if test="totalAmount!=null">totalAmount = #{totalAmount},</if>
+        <if test="discountAmount!=null">discountAmount = #{discountAmount},</if>
+        <if test="payAmount!=null">payAmount = #{payAmount},</if>
+        <if test="payMode!=null">payMode = #{payMode},</if>
+        <if test="payPlatform!=null">payPlatform = #{payPlatform},</if>
+        <if test="ipAddress!=null">ipAddress = #{ipAddress},</if>
+        <if test="paymentNo!=null">paymentNo = #{paymentNo},</if>
+        <if test="remark!=null">remark = #{remark},</if>
+        <if test="createTime!=null">createTime = #{createTime},</if>
+        <if test="updateTime!=null">updateTime = #{updateTime},</if>
+        where orderNo = #{orderNo}
+    </update>
+
+
+
+
+    <delete id="deleteorder" parameterType="com.cnlbc.domain.Order">
+        delete from `order` where id = #{id}
+    </delete>
+
+    <select id="test" resultType="com.cnlbc.domain.Order">
+        select * from `order`
+    </select>
+    <select id="DiffOrdersList" resultType="com.cnlbc.domain.Order">
+        select * from `order` where status = #{param1} and userId = #{param2}
+    </select>
+</mapper>

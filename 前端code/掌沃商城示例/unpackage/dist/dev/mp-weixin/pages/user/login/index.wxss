@@ -1,0 +1,111 @@
+@charset "UTF-8";
+/* 颜色变量 */
+/* 行为相关颜色 */
+/* 文字基本颜色 */
+/* 背景颜色 */
+/* 边框颜色 */
+/* 页面宽度 */
+.card-wrapper .card-wrap .form .form-item, .card-wrapper .card-wrap .card-footer, .card-wrapper .card-wrap .card-footer .links {
+  display: flex;
+  align-items: center;
+}
+page {
+  background-color: #f5f5f5;
+}
+.card-wrapper {
+  background-color: #ffffff;
+  width: 660px;
+  margin: 80px auto;
+  overflow: hidden;
+}
+.card-wrapper .card-wrap {
+  width: 356px;
+  margin: 40px auto 80px;
+}
+.card-wrapper .card-wrap .card-header {
+  text-align: center;
+}
+.card-wrapper .card-wrap .card-header .logo {
+  width: 60px;
+  height: 60px;
+  border-radius: 2px;
+}
+.card-wrapper .card-wrap .card-header .title {
+  font-size: 30px;
+  color: #333;
+  padding-top: 22px;
+}
+.card-wrapper .card-wrap .form {
+  display: block;
+  margin: 22px auto;
+}
+.card-wrapper .card-wrap .form .form-item {
+  height: 50px;
+  line-height: 50px;
+  margin-bottom: 14px;
+  border: 1px solid #e0e0e0;
+}
+.card-wrapper .card-wrap .form .form-item .input {
+  flex: 1;
+  height: 50px;
+  line-height: 50px;
+  padding: 0 14px;
+  color: #333;
+}
+.card-wrapper .card-wrap .form.form-smscode .country-code {
+  width: 60px;
+  height: 50px;
+  line-height: 50px;
+  color: #333;
+  text-align: center;
+  border-right: 1px solid #e0e0e0;
+}
+.card-wrapper .card-wrap .form.form-smscode .btn-send {
+  height: 50px;
+  line-height: 50px;
+  padding: 0 15px;
+  color: #003AB5;
+  cursor: pointer;
+  text-align: center;
+  border-left: 1px solid #e0e0e0;
+}
+.card-wrapper .card-wrap .form.form-smscode .btn-send.disabled {
+  cursor: default;
+  color: #757575;
+}
+.card-wrapper .card-wrap .form .btn-primary {
+  background-color: #ff6700;
+  height: 50px;
+  line-height: 50px;
+  margin-bottom: 14px;
+  color: #fff;
+  cursor: pointer;
+}
+.card-wrapper .card-wrap .card-footer {
+  justify-content: space-between;
+}
+.card-wrapper .card-wrap .card-footer .login-mode {
+  color: #ff6700;
+  cursor: pointer;
+}
+.card-wrapper .card-wrap .card-footer .links .link {
+  color: #757575;
+  cursor: pointer;
+}
+.card-wrapper .card-wrap .card-footer .links .link:hover {
+  color: #ff6700;
+}
+.card-wrapper .card-wrap .card-footer .links .separator {
+  margin: 0 5px;
+  color: #e0e0e0;
+}
+.copyright {
+  position: fixed;
+  bottom: 20px;
+  left: 0;
+  right: 0;
+  padding: 10px;
+  color: #757575;
+  text-align: center;
+}
+

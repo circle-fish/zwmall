@@ -1,0 +1,34 @@
+{
+  "pages": [
+    "pages/index",
+    "pages/search/index",
+    "pages/goods/index",
+    "pages/cart/index",
+    "pages/cart/add-success",
+    "pages/video/index",
+    "pages/user/login/index",
+    "pages/user/register/index",
+    "pages/user/register/agreement",
+    "pages/user/password/retrieve",
+    "pages/user/index",
+    "pages/user/favorite/index",
+    "pages/user/profile/shipping-address",
+    "pages/user/profile/index",
+    "pages/user/security/index",
+    "pages/order/index",
+    "pages/order/detail",
+    "pages/order/comment/index",
+    "pages/order/comment/detail",
+    "pages/order/checkout",
+    "pages/order/pay/index",
+    "pages/order/pay/pay-success"
+  ],
+  "subPackages": [],
+  "window": {
+    "navigationStyle": "custom",
+    "backgroundColor": "#FFFFFF"
+  },
+  "uniStatistics": {
+    "enable": false
+  }
+}

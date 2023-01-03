@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.cnlbc.dao.BrandMapper">
+    <select id="findspecial" parameterType="com.cnlbc.domain.Brand" resultType="com.cnlbc.domain.Brand">
+        select * from goods_brand
+        <where>
+            <if test="id!=0">
+                and id = #{id}
+            </if>
+            <if test="name!=null">
+                and name = #{name}
+            </if>
+            <if test="introduction!=null">
+                and introduction = #{introduction}
+            </if>
+            <if test="logoUrl!=null">
+                and logoUrl = #{logoUrl}
+            </if>
+            <if test="sortNo!=0">
+                and sortNo = #{sortNo}
+            </if>
+            <if test="createTime!=null">
+                and createTime = #{createTime}
+            </if>
+            <if test="updateTime!=null">
+                and updateTime = #{updateTime}
+            </if>
+        </where>
+    </select>
+    <select id="findall" resultType="com.cnlbc.domain.Brand">
+        select * from goods_brand
+    </select>
+</mapper>

@@ -1,0 +1,88 @@
+@charset "UTF-8";
+/* 颜色变量 */
+/* 行为相关颜色 */
+/* 文字基本颜色 */
+/* 背景颜色 */
+/* 边框颜色 */
+/* 页面宽度 */
+.profile-wrap {
+  display: flex;
+  align-items: center;
+}
+.profile-wrap {
+  height: 100%;
+}
+.profile-wrap .avatar-wrap {
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.profile-wrap .avatar-wrap .avatar-main {
+  position: relative;
+  width: 80px;
+  height: 80px;
+  border: 2px solid #e3e3e3;
+  border-radius: 50%;
+  padding: 4px;
+  background-color: #ffffff;
+}
+.profile-wrap .avatar-wrap .avatar-main:hover .btn-edit {
+  display: block;
+}
+.profile-wrap .avatar-wrap .avatar-main .avatar {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+}
+.profile-wrap .avatar-wrap .avatar-main .btn-edit {
+  cursor: pointer;
+  position: absolute;
+  top: 21px;
+  left: 21px;
+  border: 1px solid #e0e0e0;
+  width: 43px;
+  height: 43px;
+  line-height: 43px;
+  border-radius: 50%;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: none;
+}
+.profile-wrap .avatar-wrap .avatar-main .btn-edit .icon {
+  color: #FFFFFF;
+  font-size: 16px;
+}
+.profile-wrap .avatar-wrap .btn-change {
+  color: #4a90e3;
+  padding-top: 15px;
+  cursor: pointer;
+}
+.profile-wrap .base-wrap {
+  flex: 1;
+  position: relative;
+}
+.profile-wrap .base-wrap .title {
+  font-size: 16px;
+  font-weight: bold;
+  color: #333;
+  line-height: 40px;
+}
+.profile-wrap .base-wrap .item {
+  line-height: 40px;
+  color: #666;
+}
+.profile-wrap .base-wrap .btn-edit {
+  position: absolute;
+  top: 0;
+  right: 0;
+  color: #4a90e3;
+  line-height: 40px;
+  cursor: pointer;
+}
+.profile-wrap .base-wrap .btn-edit .icon {
+  color: #4a90e3;
+  font-size: 16px;
+  margin-right: 5px;
+}
+

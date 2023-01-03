@@ -1,0 +1,7 @@
+{
+  "navigationBarTitleText": "服务评价 - 小米商城",
+  "usingComponents": {
+    "menu-wrapper": "/components/user/common/menu-wrapper",
+    "rate": "/components/order/rate"
+  }
+}

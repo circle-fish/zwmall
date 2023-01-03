@@ -1,0 +1,48 @@
+@charset "UTF-8";
+/* 颜色变量 */
+/* 行为相关颜色 */
+/* 文字基本颜色 */
+/* 背景颜色 */
+/* 边框颜色 */
+/* 页面宽度 */
+.menu-wrapper {
+  padding-bottom: 40px;
+  background-color: #f5f5f5;
+}
+.menu-wrapper .wrap {
+  width: 1226px;
+  margin: 0 auto;
+  display: flex;
+}
+.menu-wrapper .wrap .menu-wrap {
+  width: 234px;
+  padding: 36px 0;
+  background-color: #ffffff;
+}
+.menu-wrapper .wrap .menu-wrap .menu-group {
+  margin: 0 48px 12px;
+}
+.menu-wrapper .wrap .menu-wrap .menu-group .title {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 52px;
+  color: #333;
+}
+.menu-wrapper .wrap .menu-wrap .menu-group .menu-list .menu {
+  padding: 6px 0;
+  color: #757575;
+  cursor: pointer;
+}
+.menu-wrapper .wrap .menu-wrap .menu-group .menu-list .menu:hover {
+  color: #333;
+}
+.menu-wrapper .wrap .menu-wrap .menu-group .menu-list .menu.active {
+  color: #ff6700;
+}
+.menu-wrapper .wrap .main-wrap {
+  flex: 1;
+  margin-left: 14px;
+  background-color: #ffffff;
+  padding: 36px 48px;
+}
+

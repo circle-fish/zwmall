@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText": "喜欢的商品 - 小米商城",
+  "usingComponents": {
+    "menu-wrapper": "/components/user/common/menu-wrapper"
+  }
+}

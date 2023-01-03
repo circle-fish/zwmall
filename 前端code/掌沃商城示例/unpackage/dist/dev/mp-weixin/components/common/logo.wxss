@@ -1,0 +1,36 @@
+@charset "UTF-8";
+/* 颜色变量 */
+/* 行为相关颜色 */
+/* 文字基本颜色 */
+/* 背景颜色 */
+/* 边框颜色 */
+/* 页面宽度 */
+.logo-container, .logo-container .i-home {
+  display: flex;
+  align-items: center;
+}
+.logo-container {
+  width: 55px;
+  overflow: hidden;
+  cursor: pointer;
+}
+.logo-container:hover .i-home {
+  margin-left: 0;
+}
+.logo-container .logo {
+  flex-shrink: 0;
+  width: 55px;
+  height: 55px;
+}
+.logo-container .i-home {
+  flex-shrink: 0;
+  font-size: 25px;
+  background-color: #ff6700;
+  width: 55px;
+  height: 55px;
+  color: #fff;
+  justify-content: center;
+  margin-left: -55px;
+  transition: all .2s;
+}
+

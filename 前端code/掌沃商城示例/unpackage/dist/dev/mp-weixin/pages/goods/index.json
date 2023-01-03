@@ -1,0 +1,8 @@
+{
+  "navigationBarTitleText": "商品详情 - 小米商城",
+  "usingComponents": {
+    "tool-bar": "/components/home/tool-bar",
+    "comment": "/components/goods/comment",
+    "sku": "/components/goods/sku"
+  }
+}

@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText": "支付成功 - 小米商城",
+  "usingComponents": {
+    "recommend": "/components/goods/recommend"
+  }
+}

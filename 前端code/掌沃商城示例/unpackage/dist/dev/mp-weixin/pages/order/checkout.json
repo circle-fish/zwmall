@@ -1,0 +1,7 @@
+{
+  "navigationBarTitleText": "填写订单信息 - 小米商城",
+  "usingComponents": {
+    "mini-header": "/components/common/mini-header",
+    "address-choose": "/components/order/address-choose"
+  }
+}

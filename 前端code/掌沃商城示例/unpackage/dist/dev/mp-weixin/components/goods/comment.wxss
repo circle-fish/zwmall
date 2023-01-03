@@ -1,0 +1,221 @@
+@charset "UTF-8";
+/* 颜色变量 */
+/* 行为相关颜色 */
+/* 文字基本颜色 */
+/* 背景颜色 */
+/* 边框颜色 */
+/* 页面宽度 */
+.comment-wrapper .wrap .comment-header .categories, .comment-wrapper .wrap .comment-main .comment-top, .comment-wrapper .wrap .comment-main .comment-mid .min-left .comment .top {
+  display: flex;
+  align-items: center;
+}
+.comment-wrapper {
+  background-color: #f5f5f5;
+  display: flex;
+  flex-direction: column;
+}
+.comment-wrapper .wrap {
+  width: 1226px;
+  margin: 0 auto;
+}
+.comment-wrapper .wrap .comment-header {
+  margin: 30px 0;
+  padding: 40px;
+  background-color: #ffffff;
+}
+.comment-wrapper .wrap .comment-header .title {
+  font-size: 18px;
+  color: #757575;
+  line-height: 28px;
+}
+.comment-wrapper .wrap .comment-header .categories {
+  margin-top: 14px;
+  justify-content: space-between;
+}
+.comment-wrapper .wrap .comment-header .categories .item {
+  min-width: 168px;
+  height: 44px;
+  line-height: 44px;
+  text-align: center;
+  color: #b0b0b0;
+  border: 1px solid #eee;
+  background: #f5f5f5;
+  transition: all .2s;
+  cursor: pointer;
+  transition: all .2s;
+}
+.comment-wrapper .wrap .comment-header .categories .item:hover {
+  opacity: .8;
+}
+.comment-wrapper .wrap .comment-header .categories .item.active {
+  border-color: #ff6700;
+  background-color: #ff6700;
+  color: #fff;
+  cursor: default;
+}
+.comment-wrapper .wrap .comment-empty {
+  font-size: 20px;
+  text-align: center;
+  padding: 58.5px 0;
+  margin: 30px 0;
+  background-color: #ffffff;
+}
+.comment-wrapper .wrap .comment-main {
+  padding-bottom: 30px;
+}
+.comment-wrapper .wrap .comment-main .comment-top {
+  width: 792px;
+  height: 50px;
+  line-height: 40px;
+  font-size: 22px;
+  color: #616161;
+  justify-content: space-between;
+}
+.comment-wrapper .wrap .comment-main .comment-top .title {
+  line-height: 40px;
+  font-size: 22px;
+  color: #616161;
+}
+.comment-wrapper .wrap .comment-main .comment-top .btn-check {
+  color: #b0b0b0;
+  line-height: 40px;
+  cursor: pointer;
+  font-size: 14px;
+}
+.comment-wrapper .wrap .comment-main .comment-top .btn-check checkbox {
+  -webkit-transform: scale(0.7);
+          transform: scale(0.7);
+}
+.comment-wrapper .wrap .comment-main .comment-mid {
+  display: flex;
+}
+.comment-wrapper .wrap .comment-main .comment-mid .min-left {
+  width: 792px;
+}
+.comment-wrapper .wrap .comment-main .comment-mid .min-left .comment {
+  padding: 40px;
+  background-color: #ffffff;
+  margin-top: 15px;
+}
+.comment-wrapper .wrap .comment-main .comment-mid .min-left .comment:first-child {
+  margin-top: 0;
+}
+.comment-wrapper .wrap .comment-main .comment-mid .min-left .comment .top .avatar {
+  width: 47px;
+  height: 47px;
+}
+.comment-wrapper .wrap .comment-main .comment-mid .min-left .comment .top .publish-info {
+  margin-left: 10px;
+}
+.comment-wrapper .wrap .comment-main .comment-mid .min-left .comment .top .publish-info .user-name {
+  max-width: 220px;
+  height: 18px;
+  line-height: 18px;
+  font-size: 16px;
+  color: #8d665a;
+}
+.comment-wrapper .wrap .comment-main .comment-mid .min-left .comment .top .publish-info .publish-date {
+  height: 20px;
+  line-height: 20px;
+  margin-top: 6px;
+  color: #b0b0b0;
+}
+.comment-wrapper .wrap .comment-main .comment-mid .min-left .comment .top .love {
+  margin-left: auto;
+}
+.comment-wrapper .wrap .comment-main .comment-mid .min-left .comment .main {
+  padding-left: 56px;
+}
+.comment-wrapper .wrap .comment-main .comment-mid .min-left .comment .main .content {
+  margin-top: 8px;
+  color: #5e5e5e;
+  font-size: 18px;
+  line-height: 27px;
+}
+.comment-wrapper .wrap .comment-main .comment-mid .min-left .comment .main .photos {
+  margin-top: 15px;
+  display: flex;
+  flex-wrap: wrap;
+}
+.comment-wrapper .wrap .comment-main .comment-mid .min-left .comment .main .photos .photo {
+  width: 160px;
+  height: 160px;
+  margin: 0 8px 8px 0;
+  cursor: pointer;
+}
+.comment-wrapper .wrap .comment-main .comment-mid .min-left .comment .main .like {
+  margin-top: 8px;
+  line-height: 33px;
+  display: flex;
+}
+.comment-wrapper .wrap .comment-main .comment-mid .min-left .comment .main .like.active .like-wrap .icon {
+  color: #ff6700;
+}
+.comment-wrapper .wrap .comment-main .comment-mid .min-left .comment .main .like .like-wrap {
+  cursor: pointer;
+}
+.comment-wrapper .wrap .comment-main .comment-mid .min-left .comment .main .like .like-wrap .icon {
+  font-size: 22px;
+  line-height: 33px;
+  color: #757575;
+}
+.comment-wrapper .wrap .comment-main .comment-mid .min-left .comment .main .like .like-wrap .count {
+  line-height: 33px;
+  color: #757575;
+  margin-left: 2px;
+}
+.comment-wrapper .wrap .comment-main .comment-mid .min-left .btn-more {
+  color: #ff6700;
+  width: 100%;
+  height: 45px;
+  margin-top: 15px;
+  line-height: 45px;
+  background-color: #ffffff;
+  text-align: center;
+  cursor: pointer;
+}
+.comment-wrapper .wrap .comment-main .comment-mid .min-right {
+  margin-left: auto;
+  width: 420px;
+  position: relative;
+}
+.comment-wrapper .wrap .comment-main .comment-mid .min-right .score-result {
+  margin-bottom: 30px;
+  padding: 22px 30px 40px;
+  background-color: #ffffff;
+}
+.comment-wrapper .wrap .comment-main .comment-mid .min-right .score-result .title {
+  color: #b0b0b0;
+}
+.comment-wrapper .wrap .comment-main .comment-mid .min-right .score-result .title .value {
+  font-size: 60px;
+  color: #ff6700;
+}
+.comment-wrapper .wrap .comment-main .comment-mid .min-right .score-result .degree {
+  height: 22px;
+  margin-top: 10px;
+  background: #f1f2f6;
+  position: relative;
+}
+.comment-wrapper .wrap .comment-main .comment-mid .min-right .score-result .degree .value {
+  height: 22px;
+  line-height: 22px;
+  background-color: #83c44e;
+  text-align: center;
+  font-size: 12px;
+  color: #fff;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.comment-wrapper .wrap .comment-main .comment-mid .min-right .btn-gotop {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  margin-top: 15px;
+  width: 110px;
+  height: 110px;
+  background: #fff url(//c1.mifile.cn/f/i/17/comment2017/arrow.png) 50% no-repeat;
+  cursor: pointer;
+}
+

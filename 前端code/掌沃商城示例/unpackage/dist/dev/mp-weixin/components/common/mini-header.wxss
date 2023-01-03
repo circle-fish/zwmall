@@ -1,0 +1,52 @@
+@charset "UTF-8";
+/* 颜色变量 */
+/* 行为相关颜色 */
+/* 文字基本颜色 */
+/* 背景颜色 */
+/* 边框颜色 */
+/* 页面宽度 */
+.header-wrapper .wrap, .header-wrapper .wrap .top-navbar {
+  display: flex;
+  align-items: center;
+}
+.header-wrapper {
+  height: 100px;
+  border-bottom: 2px solid #ff6700;
+}
+.header-wrapper .wrap {
+  width: 1226px;
+  height: 100px;
+  margin: 0 auto;
+}
+.header-wrapper .wrap .title {
+  font-size: 28px;
+  line-height: 48px;
+  color: #424242;
+  margin-left: 48px;
+}
+.header-wrapper .wrap .tips {
+  height: 20px;
+  line-height: 20px;
+  margin-top: 15px;
+  margin-left: 15px;
+  color: #757575;
+  font-size: 12px;
+}
+.header-wrapper .wrap .top-navbar {
+  margin-left: auto;
+  color: #757575;
+  font-size: 12px;
+}
+.header-wrapper .wrap .top-navbar .nav-item {
+  margin: 0 5px;
+  cursor: pointer;
+  transition: color .2s;
+}
+.header-wrapper .wrap .top-navbar .nav-item:hover {
+  color: #ff6700;
+}
+.header-wrapper .wrap .top-navbar .separator {
+  color: #e0e0e0;
+  line-height: 40px;
+}
+

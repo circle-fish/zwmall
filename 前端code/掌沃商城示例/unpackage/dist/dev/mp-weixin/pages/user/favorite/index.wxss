@@ -1,0 +1,83 @@
+@charset "UTF-8";
+/* 颜色变量 */
+/* 行为相关颜色 */
+/* 文字基本颜色 */
+/* 背景颜色 */
+/* 边框颜色 */
+/* 页面宽度 */
+.goods-list .goods .btn-wrap {
+  display: flex;
+  align-items: center;
+}
+.title {
+  font-size: 30px;
+  color: #757575;
+  line-height: 68px;
+}
+.goods-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+.goods-list .goods {
+  width: 260px;
+  height: 348px;
+  padding-top: 40px;
+  padding-right: 34px;
+  border-bottom: 1px solid #e0e0e0;
+  text-align: center;
+}
+.goods-list .goods:hover .btn-wrap {
+  display: flex;
+}
+.goods-list .goods .thumb {
+  width: 200px;
+  height: 200px;
+}
+.goods-list .goods .name {
+  margin-top: 10px;
+  max-width: 250px;
+  color: #333;
+  font-weight: 400;
+}
+.goods-list .goods .price {
+  margin-top: 5px;
+  color: #ff6700;
+}
+.goods-list .goods .btn-wrap {
+  margin-top: 36px;
+  justify-content: center;
+  display: none;
+}
+.goods-list .goods .btn-wrap .btn {
+  width: 108px;
+  height: 30px;
+  line-height: 28px;
+  margin: 0 7px;
+  font-size: 12px;
+  cursor: pointer;
+}
+.goods-list .goods .btn-wrap .btn.btn-gray {
+  border: 1px solid #b0b0b0;
+  background-color: #fff;
+  color: #b0b0b0;
+}
+.goods-list .goods .btn-wrap .btn.btn-gray:hover {
+  color: #fff;
+  background-color: #757575;
+  border-color: #757575;
+}
+.goods-list .goods .btn-wrap .btn.btn-primary {
+  background-color: #ff6700;
+  border: 1px solid #ff6700;
+  color: #fff;
+}
+.goods-list .goods .btn-wrap .btn.btn-primary:hover {
+  opacity: .8;
+}
+.empty-tip {
+  margin: 60px 0;
+  font-size: 18px;
+  text-align: center;
+  color: #b0b0b0;
+}
+

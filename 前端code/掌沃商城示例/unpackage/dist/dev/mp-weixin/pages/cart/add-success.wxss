@@ -1,0 +1,63 @@
+@charset "UTF-8";
+/* 颜色变量 */
+/* 行为相关颜色 */
+/* 文字基本颜色 */
+/* 背景颜色 */
+/* 边框颜色 */
+/* 页面宽度 */
+.success-wrapper .wrap, .success-wrapper .wrap .btn-wrap {
+  display: flex;
+  align-items: center;
+}
+.success-wrapper {
+  display: flex;
+  background-color: #f5f5f5;
+}
+.success-wrapper .wrap {
+  width: 1226px;
+  margin: 0 auto;
+  padding: 38px 0;
+  border-bottom: 1px solid #e0e0e0;
+  margin-bottom: 20px;
+}
+.success-wrapper .wrap .success-icon {
+  width: 64px;
+  height: 64px;
+}
+.success-wrapper .wrap .success-info {
+  margin-left: 20px;
+}
+.success-wrapper .wrap .success-info .title {
+  color: #424242;
+  font-size: 24px;
+}
+.success-wrapper .wrap .success-info .goods-name {
+  color: #757575;
+}
+.success-wrapper .wrap .btn-wrap {
+  margin-left: auto;
+}
+.success-wrapper .wrap .btn-wrap .btn {
+  width: 180px;
+  margin-left: 12px;
+  border: 1px solid #b0b0b0;
+  background-color: #f5f5f5;
+  color: #757575;
+  line-height: 38px;
+  text-align: center;
+  cursor: pointer;
+  transition: all .4s;
+}
+.success-wrapper .wrap .btn-wrap .btn:hover {
+  background-color: #ffffff;
+}
+.success-wrapper .wrap .btn-wrap .btn.btn-primary {
+  color: #FFFFFF;
+  border-color: #ff6700;
+  background-color: #ff6700;
+}
+.success-wrapper .wrap .btn-wrap .btn.btn-primary:hover {
+  opacity: .8;
+  background-color: #ff6700;
+}
+

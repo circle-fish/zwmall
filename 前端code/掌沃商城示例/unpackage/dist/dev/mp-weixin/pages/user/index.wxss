@@ -1,0 +1,87 @@
+@charset "UTF-8";
+/* 颜色变量 */
+/* 行为相关颜色 */
+/* 文字基本颜色 */
+/* 背景颜色 */
+/* 边框颜色 */
+/* 页面宽度 */
+.card-header, .card-header .left, .card-header .right .item, .card-body .button, .card-body .button .right .top, .card-body .button .right .link {
+  display: flex;
+  align-items: center;
+}
+.card-header {
+  padding-top: 24px;
+}
+.card-header .left .avatar {
+  width: 150px;
+  height: 150px;
+  padding: 4px;
+  border: 1px solid #e0e0e0;
+  border-radius: 50%;
+  object-fit: fill;
+}
+.card-header .left .user-info {
+  width: 302px;
+  margin-left: 20px;
+}
+.card-header .left .user-info .user-name {
+  max-width: 220px;
+  font-size: 24px;
+  font-weight: 400;
+  color: #616161;
+}
+.card-header .left .user-info .tip {
+  margin-top: 5px;
+  color: #b0b0b0;
+}
+.card-header .left .user-info .link {
+  display: inline-block;
+  font-size: 12px;
+  margin-top: 10px;
+  color: #ff6700;
+}
+.card-header .right .item {
+  padding: 6px 0;
+  color: #757575;
+}
+.card-body {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 40px;
+  padding-top: 50px;
+  border-top: 1px solid #e0e0e0;
+}
+.card-body .button {
+  margin-bottom: 60px;
+}
+.card-body .button .btn-icon {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+}
+.card-body .button .right {
+  width: 276px;
+  margin-left: 20px;
+}
+.card-body .button .right .top {
+  font-size: 18px;
+  font-weight: 400;
+}
+.card-body .button .right .top .name {
+  color: #757575;
+}
+.card-body .button .right .top .value {
+  color: #ff6700;
+}
+.card-body .button .right .link {
+  line-height: 1.8;
+  color: #757575;
+  cursor: pointer;
+}
+.card-body .button .right .link:hover {
+  color: #ff6700;
+}
+.card-body .button .right .link .icon {
+  font-weight: bold;
+}
+

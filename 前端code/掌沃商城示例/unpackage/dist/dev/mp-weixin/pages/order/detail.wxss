@@ -1,0 +1,145 @@
+@charset "UTF-8";
+/* 颜色变量 */
+/* 行为相关颜色 */
+/* 文字基本颜色 */
+/* 背景颜色 */
+/* 边框颜色 */
+/* 页面宽度 */
+.order-header .btn-wrap, .goods-wrap .goods, .other-details .item, .total-amount .item {
+  display: flex;
+  align-items: center;
+}
+.title {
+  font-size: 30px;
+  color: #757575;
+  line-height: 68px;
+}
+.order-header {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  padding: 20px 0;
+  border-bottom: 1px solid #e0e0e0;
+}
+.order-header .orderno {
+  font-size: 18px;
+  color: #333;
+}
+.order-header .btn-wrap .btn {
+  margin-left: 10px;
+  width: 118px;
+  height: 28px;
+  line-height: 28px;
+  font-size: 12px;
+  text-align: center;
+  cursor: pointer;
+  color: #757575;
+  border: 1px solid #757575;
+  transition: all .3s;
+}
+.order-header .btn-wrap .btn.btn-primary {
+  background-color: #ff6700;
+  color: #FFFFFF;
+  border-color: #ff6700;
+}
+.order-header .btn-wrap .btn.btn-primary:hover {
+  background-color: #ff6700;
+  color: #FFFFFF;
+  border-color: #ff6700;
+  opacity: .9;
+}
+.order-header .btn-wrap .btn:hover {
+  color: #fff;
+  background-color: #757575;
+  border-color: #757575;
+}
+.order-status {
+  color: #b0b0b0;
+  font-size: 18px;
+  margin: 25px 0;
+}
+.order-status.warnging {
+  color: #ff6700;
+}
+.order-status.green {
+  color: #83c44e;
+}
+.express-wrap {
+  margin: 15px 20px;
+  line-height: 30px;
+  border-bottom: 1px solid #cfeeab;
+}
+.express-wrap .item {
+  font-size: 12px;
+  color: #757575;
+}
+.express-wrap .link {
+  cursor: pointer;
+  margin-right: 10px;
+}
+.express-wrap .link .icon {
+  font-size: 11px;
+  margin-left: 2px;
+}
+.express-wrap .link:hover {
+  color: #ff6700;
+}
+.goods-wrap {
+  margin-top: 20px;
+}
+.goods-wrap .goods {
+  color: #333;
+  height: 90px;
+  border-bottom: 1px solid #e0e0e0;
+}
+.goods-wrap .goods .thumb {
+  width: 80px;
+  height: 80px;
+}
+.goods-wrap .goods .name {
+  color: #333;
+  margin-left: 20px;
+  min-width: 300px;
+  max-width: 600px;
+  padding-right: 20px;
+}
+.goods-wrap .goods .name:hover {
+  color: #ff6700;
+}
+.other-details {
+  min-height: 120px;
+  padding: 30px 0 12px;
+  border-bottom: 1px solid #e0e0e0;
+}
+.other-details .detail-title {
+  margin-bottom: 15px;
+  font-size: 18px;
+  color: #333;
+}
+.other-details .item {
+  color: #757575;
+}
+.other-details .item .name {
+  font-weight: bold;
+  padding: 3px 0;
+  padding-right: .3em;
+}
+.total-amount {
+  padding-top: 30px;
+}
+.total-amount .item {
+  justify-content: flex-end;
+  padding: 5px 0;
+}
+.total-amount .item .name {
+  color: #757575;
+}
+.total-amount .item .value {
+  min-width: 120px;
+  text-align: right;
+  color: #ff6700;
+}
+.total-amount .item .pay-amount {
+  font-size: 30px;
+}
+

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.cnlbc.dao.GoodsMapper">
+    <select id="findbrand" resultType="com.cnlbc.domain.Goods">
+        select * from goods where brandId = brandId;
+    </select>
+    <select id="hotGoodsList" resultType="com.cnlbc.domain.Goods">
+        select * from goods ORDER BY buynum DESC LIMIT 5;
+    </select>
+    <select id="search"  resultType="com.cnlbc.domain.Goods">
+        select * from goods
+        <where>
+        <if test="keyword!=null and keyword != 'all'">
+            <bind name="pattern" value="'%' + keyword + '%'"/>
+            and name like #{pattern}
+        </if>
+        <if test="categoryId!=-1">
+            and categoryId = #{categoryId}
+        </if>
+        <if test="brandId!=-1">
+            and brandId = #{brandId}
+        </if>
+    </where>ORDER BY buynum DESC;
+    </select>
+
+    <select id="promptKeywords" parameterType="java.lang.String" resultType="java.lang.String">
+        <bind name="pattern" value="'%' + keyword + '%'"/>
+        select name from goods where name like #{pattern}
+    </select>
+
+    <select id="recommends" parameterType="java.lang.String" resultType="com.cnlbc.domain.Goods">
+        select * from goods where name like '%#{keyword}%' ORDER BY buynum DESC LIMIT 5;
+    </select>
+
+    <select  id="details" parameterType="java.lang.Integer" resultType="com.cnlbc.domain.Goods">
+        select  * from goods where id = #{id}
+    </select>
+
+    <update id="buysomething" parameterType="com.cnlbc.domain.Goods">
+        update goods set buynum = #{buynum},createTime = #{createTime} where id = #{id}
+    </update>
+    <select id="comments" resultType="com.cnlbc.domain.GoodsComment">
+        select * from goods_comment where goodsId = #{id};
+    </select>
+    <select id="getCategory" resultType="com.cnlbc.domain.GoodsCategory">
+        select * from goods_category where goodsId = #{id};
+    </select>
+</mapper>

@@ -1,0 +1,66 @@
+@charset "UTF-8";
+/* 颜色变量 */
+/* 行为相关颜色 */
+/* 文字基本颜色 */
+/* 背景颜色 */
+/* 边框颜色 */
+/* 页面宽度 */
+.form-wrap .form-item {
+  display: flex;
+  align-items: center;
+}
+.form-wrap {
+  width: 100%;
+  padding: 20px;
+}
+.form-wrap .form-item {
+  position: relative;
+  padding-bottom: 15px;
+  height: 40px;
+}
+.form-wrap .form-item .name {
+  width: 60px;
+  margin-right: 10px;
+  text-align: right;
+  font-weight: bold;
+  color: #666;
+}
+.form-wrap .form-item .value {
+  width: 320px;
+  color: #333;
+}
+.form-wrap .form-item .value.pointer,
+.form-wrap .form-item .value.pointer .uni-input-input {
+  cursor: pointer;
+}
+.form-wrap .form-item .value input {
+  height: 40px;
+  line-height: 40px;
+  padding: 0 10px;
+  border: 1px solid #e0e0e0;
+}
+.form-wrap .form-item .value label {
+  margin-right: 20px;
+}
+.form-wrap .form-item .value label radio {
+  -webkit-transform: scale(0.8);
+          transform: scale(0.8);
+}
+.form-wrap .form-item.textarea {
+  align-items: flex-start;
+  height: 100px;
+}
+.form-wrap .form-item.textarea textarea {
+  width: 298px;
+  padding: 10px;
+  height: 60px;
+  border: 1px solid #e0e0e0;
+}
+.city-picker-warpper {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 285px;
+}
+

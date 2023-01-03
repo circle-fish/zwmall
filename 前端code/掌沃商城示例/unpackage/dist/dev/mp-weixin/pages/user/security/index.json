@@ -1,0 +1,9 @@
+{
+  "navigationBarTitleText": "账号安全 - 小米商城",
+  "usingComponents": {
+    "menu-wrapper": "/components/user/common/menu-wrapper",
+    "password-reset": "/components/user/security/password-reset",
+    "email-reset": "/components/user/security/email-reset",
+    "phone-reset": "/components/user/security/phone-reset"
+  }
+}

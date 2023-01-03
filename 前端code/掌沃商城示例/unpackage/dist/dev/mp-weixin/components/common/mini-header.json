@@ -1,0 +1,7 @@
+{
+  "component": true,
+  "usingComponents": {
+    "logo": "/components/common/logo",
+    "user-navs": "/components/user/common/top-navs"
+  }
+}

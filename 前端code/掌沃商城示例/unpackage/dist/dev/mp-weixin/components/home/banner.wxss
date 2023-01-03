@@ -1,0 +1,31 @@
+@charset "UTF-8";
+/* 颜色变量 */
+/* 行为相关颜色 */
+/* 文字基本颜色 */
+/* 背景颜色 */
+/* 边框颜色 */
+/* 页面宽度 */
+.warpper {
+  background-color: #f5f5f5;
+}
+.warpper.top .warp, .warpper.top .banner {
+  width: 100% !important;
+  padding: 0 !important;
+}
+.warpper.top .banner {
+  margin-bottom: -5px;
+  height: auto !important;
+  max-height: 200px;
+}
+.warpper .warp {
+  width: 1226px;
+  display: block;
+  margin: 0 auto;
+  padding: 22px 0;
+  cursor: pointer;
+}
+.warpper .warp .banner {
+  width: 1226px;
+  height: 120px;
+}
+

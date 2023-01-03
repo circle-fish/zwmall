@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText": "视频列表 - 小米商城",
+  "usingComponents": {
+    "play-dialog": "/components/video/play-dialog"
+  }
+}

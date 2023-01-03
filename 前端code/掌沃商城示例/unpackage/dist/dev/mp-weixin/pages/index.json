@@ -1,0 +1,12 @@
+{
+  "navigationBarTitleText": "首页 - 小米商城",
+  "usingComponents": {
+    "hero": "/components/home/hero",
+    "hero-sub": "/components/home/hero-sub",
+    "tool-bar": "/components/home/tool-bar",
+    "flash-sale": "/components/home/flash-sale",
+    "banner": "/components/home/banner",
+    "brick": "/components/home/brick",
+    "video-box": "/components/home/video-box"
+  }
+}

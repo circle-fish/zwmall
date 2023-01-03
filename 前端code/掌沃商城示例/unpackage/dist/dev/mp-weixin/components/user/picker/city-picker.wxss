@@ -1,0 +1,61 @@
+@charset "UTF-8";
+/* 颜色变量 */
+/* 行为相关颜色 */
+/* 文字基本颜色 */
+/* 背景颜色 */
+/* 边框颜色 */
+/* 页面宽度 */
+.city-picker {
+  position: absolute;
+  z-index: 3;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background-color: #ffffff;
+  padding: 15px 20px;
+  border-radius: 4px;
+  box-shadow: 0 2px 12px 0 rgba(0, 0, 0, 0.1);
+}
+.city-picker .card-header {
+  position: relative;
+  padding: 6px 0;
+  line-height: 30px;
+  border-bottom: 1px solid #e0e0e0;
+}
+.city-picker .card-header .address-item {
+  color: #ff6700;
+  margin-right: 5px;
+  cursor: pointer;
+}
+.city-picker .card-header .title {
+  color: #757575;
+}
+.city-picker .card-header .i-close {
+  position: absolute;
+  right: 0;
+  top: 0;
+  cursor: pointer;
+  font-size: 10px;
+  font-weight: bold;
+  color: #B0B0B0;
+}
+.city-picker .card-body {
+  max-height: 100%;
+  overflow-y: auto;
+  display: flex;
+  flex-wrap: wrap;
+  padding-top: 20px;
+  background-color: #ffffff;
+}
+.city-picker .card-body .item {
+  margin-right: 14px;
+  line-height: 30px;
+  margin-bottom: 6px;
+  color: #333;
+  cursor: pointer;
+}
+.city-picker .card-body .item:hover {
+  color: #ff6700;
+}
+

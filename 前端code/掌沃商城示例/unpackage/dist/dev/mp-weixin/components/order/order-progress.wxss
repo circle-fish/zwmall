@@ -1,0 +1,54 @@
+@charset "UTF-8";
+/* 颜色变量 */
+/* 行为相关颜色 */
+/* 文字基本颜色 */
+/* 背景颜色 */
+/* 边框颜色 */
+/* 页面宽度 */
+.progress-wrap .progress {
+  display: flex;
+  align-items: center;
+}
+.progress-wrap {
+  padding-bottom: 40px;
+}
+.progress-wrap .progress {
+  width: 880px;
+  height: 20px;
+  line-height: 20px;
+  border-radius: 20px;
+  font-size: 12px;
+  background-color: #eee;
+}
+.progress-wrap .progress .item {
+  width: 176px;
+  height: 20px;
+  text-align: center;
+  position: relative;
+}
+.progress-wrap .progress .item:first-child {
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+}
+.progress-wrap .progress .item.active {
+  background-color: #83c44e;
+}
+.progress-wrap .progress .item.active .name {
+  color: #fff;
+}
+.progress-wrap .progress .item.last {
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+.progress-wrap .progress .item .name {
+  color: #333;
+}
+.progress-wrap .progress .item .time {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  margin-top: 15px;
+  color: #757575;
+}
+

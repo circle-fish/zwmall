@@ -1,0 +1,1 @@
+<view class="progress-wrap"><view class="progress"><block wx:for="{{$root.l0}}" wx:for-item="item" wx:for-index="index" wx:key="index"><view class="{{['item',[(item.$orig.value)?'active':''],[(index==lastIndex)?'last':'']]}}"><view class="name">{{item.$orig.name}}</view><block wx:if="{{item.$orig.value}}"><view class="time">{{item.f0}}</view></block></view></block></view></view>

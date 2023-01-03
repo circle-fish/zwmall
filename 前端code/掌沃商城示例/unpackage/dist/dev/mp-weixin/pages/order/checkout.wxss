@@ -1,0 +1,196 @@
+@charset "UTF-8";
+/* 颜色变量 */
+/* 行为相关颜色 */
+/* 文字基本颜色 */
+/* 背景颜色 */
+/* 边框颜色 */
+/* 页面宽度 */
+.header-wrapper .wrap, .header-wrapper .wrap .top-navbar, .wrapper .wrap .goods-wrap .goods, .wrapper .wrap .express-wrap, .wrapper .wrap .subtotal-wrap .item, .wrapper .wrap .bottom-wrap, .wrapper .wrap .bottom-wrap .btn-wrap, .fixed-bar .wrap {
+  display: flex;
+  align-items: center;
+}
+.header-wrapper {
+  height: 100px;
+  border-bottom: 2px solid #ff6700;
+}
+.header-wrapper .wrap {
+  width: 1226px;
+  height: 100px;
+  margin: 0 auto;
+}
+.header-wrapper .wrap .title {
+  font-size: 28px;
+  line-height: 48px;
+  color: #424242;
+  margin-left: 48px;
+}
+.header-wrapper .wrap .top-navbar {
+  margin-left: auto;
+  color: #757575;
+  font-size: 12px;
+}
+.wrapper {
+  background-color: #f5f5f5;
+  padding: 40px 0 60px;
+}
+.wrapper .wrap {
+  width: 1226px;
+  margin: 0 auto;
+  background-color: #ffffff;
+}
+.wrapper .wrap .goods-wrap {
+  padding: 0 48px;
+}
+.wrapper .wrap .goods-wrap .title {
+  color: #333;
+  font-size: 18px;
+  line-height: 40px;
+  border-bottom: 1px solid #e0e0e0;
+}
+.wrapper .wrap .goods-wrap .goods {
+  padding: 15px 0;
+}
+.wrapper .wrap .goods-wrap .goods .thumb {
+  width: 30px;
+  height: 30px;
+  margin-right: 10px;
+}
+.wrapper .wrap .goods-wrap .goods .name {
+  display: inline-block;
+  width: 650px;
+  color: #424242;
+  cursor: pointer;
+}
+.wrapper .wrap .goods-wrap .goods .subtotal {
+  color: #424242;
+  width: 150px;
+  text-align: center;
+}
+.wrapper .wrap .goods-wrap .goods .amount {
+  margin-left: 100px;
+  width: 190px;
+  text-align: center;
+  color: #ff6700;
+}
+.wrapper .wrap .express-wrap {
+  border-top: 1px solid #e0e0e0;
+  padding: 25px 0;
+  margin: 0 48px;
+}
+.wrapper .wrap .express-wrap .name {
+  color: #333;
+  font-size: 18px;
+  width: 150px;
+}
+.wrapper .wrap .express-wrap .value {
+  color: #ff6700;
+}
+.wrapper .wrap .subtotal-wrap {
+  border-top: 1px solid #e0e0e0;
+  padding: 25px 0;
+  margin: 0 48px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+.wrapper .wrap .subtotal-wrap .item {
+  line-height: 2;
+}
+.wrapper .wrap .subtotal-wrap .item .name {
+  color: #757575;
+}
+.wrapper .wrap .subtotal-wrap .item .value {
+  min-width: 100px;
+  text-align: right;
+  color: #ff6700;
+}
+.wrapper .wrap .bottom-wrap {
+  border-top: 2px solid #f5f5f5;
+  padding: 25px 48px;
+}
+.wrapper .wrap .bottom-wrap .address-wrap {
+  line-height: 20px;
+  color: #424242;
+}
+.wrapper .wrap .bottom-wrap .address-wrap .btn-update {
+  color: #ff6700;
+  margin-left: 5px;
+  cursor: pointer;
+}
+.wrapper .wrap .bottom-wrap .btn-wrap {
+  margin-left: auto;
+  justify-content: flex-end;
+}
+.wrapper .wrap .bottom-wrap .btn-wrap .btn {
+  width: 158px;
+  height: 38px;
+  line-height: 38px;
+  text-align: center;
+  cursor: pointer;
+  margin: 0;
+  margin-left: 30px;
+}
+.wrapper .wrap .bottom-wrap .btn-wrap .btn.btn-gray {
+  border: 1px solid #b0b0b0;
+  background-color: #ffffff;
+  color: rgba(0, 0, 0, 0.27);
+}
+.wrapper .wrap .bottom-wrap .btn-wrap .btn.btn-primary {
+  color: #FFFFFF;
+  border: 1px solid #ff6700;
+  background-color: #ff6700;
+}
+.wrapper .wrap .bottom-wrap .btn-wrap .btn:hover {
+  opacity: .8;
+}
+.fixed-bar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 10;
+  height: 70px;
+  line-height: 70px;
+  background-color: #ffffff;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+  -webkit-animation: open .5s forwards;
+          animation: open .5s forwards;
+}
+@-webkit-keyframes open {
+from {
+    margin-top: -50%;
+}
+to {
+    margin-top: 0;
+}
+}
+@keyframes open {
+from {
+    margin-top: -50%;
+}
+to {
+    margin-top: 0;
+}
+}
+.fixed-bar .wrap {
+  width: 1226px;
+  margin: 0 auto;
+  justify-content: space-between;
+}
+.fixed-bar .wrap .address-wrap {
+  color: #757575;
+}
+.fixed-bar .wrap .btn {
+  margin-right: 0;
+  width: 160px;
+  height: 40px;
+  line-height: 40px;
+  background-color: #ff6700;
+  color: #FFFFFF;
+  text-align: center;
+  cursor: pointer;
+}
+.fixed-bar .wrap .btn:hover {
+  background-color: #f25807;
+}
+

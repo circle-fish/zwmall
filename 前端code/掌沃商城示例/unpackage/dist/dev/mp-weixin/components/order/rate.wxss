@@ -1,0 +1,42 @@
+@charset "UTF-8";
+/* 颜色变量 */
+/* 行为相关颜色 */
+/* 文字基本颜色 */
+/* 背景颜色 */
+/* 边框颜色 */
+/* 页面宽度 */
+.rate-wrapper {
+  display: flex;
+  align-items: center;
+}
+.name {
+  margin-right: 15px;
+  font-weight: bold;
+  color: #333;
+}
+.rate-wrapper .rate-wrap {
+  position: relative;
+  margin-right: 5px;
+}
+.rate-wrapper .rate-wrap .icon {
+  font-size: 20px;
+  color: #999;
+  cursor: pointer;
+}
+.rate-wrapper .rate-wrap .icon.disabled {
+  cursor: default;
+}
+.rate-wrapper .rate-wrap .icon.active {
+  color: #ff6700;
+}
+.rate-wrapper .rate-wrap .active-wrap {
+  position: absolute;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+}
+.rate-wrapper .score {
+  margin-left: 5px;
+  color: #333;
+}
+

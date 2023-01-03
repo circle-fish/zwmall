@@ -1,0 +1,7 @@
+{
+  "navigationBarTitleText": "订单详情 - 小米商城",
+  "usingComponents": {
+    "menu-wrapper": "/components/user/common/menu-wrapper",
+    "order-progress": "/components/order/order-progress"
+  }
+}

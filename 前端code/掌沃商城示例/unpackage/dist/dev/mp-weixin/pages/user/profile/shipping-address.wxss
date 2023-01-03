@@ -1,0 +1,94 @@
+@charset "UTF-8";
+/* 颜色变量 */
+/* 行为相关颜色 */
+/* 文字基本颜色 */
+/* 背景颜色 */
+/* 边框颜色 */
+/* 页面宽度 */
+.address-wrap .box.box-add, .address-wrap .box .box-address .top, .address-wrap .box .btn-wrap {
+  display: flex;
+  align-items: center;
+}
+.title {
+  font-size: 30px;
+  color: #757575;
+  line-height: 68px;
+}
+.address-wrap {
+  margin-top: 30px;
+  display: flex;
+  flex-wrap: wrap;
+}
+.address-wrap .box {
+  width: 268px;
+  height: 178px;
+  border: 1px solid #e0e0e0;
+  margin-right: 17px;
+  margin-bottom: 20px;
+  position: relative;
+  transition: all .4s ease;
+}
+.address-wrap .box:hover {
+  border-color: #b0b0b0;
+}
+.address-wrap .box:hover .btn-wrap {
+  display: flex;
+}
+.address-wrap .box.box-add {
+  justify-content: center;
+  flex-direction: column;
+  cursor: pointer;
+  transition: all .4s ease;
+}
+.address-wrap .box.box-add:hover .btn-add {
+  background-color: #b0b0b0;
+}
+.address-wrap .box.box-add .btn-add {
+  width: 30px;
+  height: 30px;
+  font-size: 28px;
+  line-height: 26px;
+  background-color: #e0e0e0;
+  border-radius: 50%;
+  color: #FFFFFF;
+  text-align: center;
+  transition: all .4s ease;
+}
+.address-wrap .box.box-add .desc {
+  margin-top: 8px;
+  color: #b0b0b0;
+}
+.address-wrap .box .box-address {
+  position: relative;
+  padding: 15px 24px 0;
+}
+.address-wrap .box .box-address .top {
+  line-height: 30px;
+  margin-bottom: 10px;
+  justify-content: space-between;
+}
+.address-wrap .box .box-address .top .user-name {
+  font-size: 18px;
+  color: #333;
+}
+.address-wrap .box .box-address .top .address-label {
+  color: #757575;
+}
+.address-wrap .box .box-address .phone-number,
+.address-wrap .box .box-address .address-detail {
+  line-height: 22px;
+  color: #757575;
+}
+.address-wrap .box .btn-wrap {
+  position: absolute;
+  right: 24px;
+  bottom: 10px;
+  line-height: 22px;
+  color: #ff6700;
+  display: none;
+}
+.address-wrap .box .btn-wrap .btn {
+  cursor: pointer;
+  margin-left: 10px;
+}
+

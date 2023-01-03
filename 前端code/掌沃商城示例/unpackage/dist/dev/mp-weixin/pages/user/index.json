@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText": "个人中心 - 小米商城",
+  "usingComponents": {
+    "menu-wrapper": "/components/user/common/menu-wrapper"
+  }
+}

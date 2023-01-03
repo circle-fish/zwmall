@@ -1,0 +1,6 @@
+{
+  "component": true,
+  "usingComponents": {
+    "address-editer": "/components/user/editer/address-editer"
+  }
+}

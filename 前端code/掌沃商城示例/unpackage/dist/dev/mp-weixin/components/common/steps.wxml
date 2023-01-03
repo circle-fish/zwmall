@@ -1,0 +1,1 @@
+<view class="steps-wrapper"><block wx:for="{{steps}}" wx:for-item="item" wx:for-index="index" wx:key="index"><block><view class="{{['step',[(index<=step)?'active':'']]}}"><view class="name">{{item}}</view><view class="{{['dot',[(index==step)?'noline':'']]}}">·</view></view></block></block></view>

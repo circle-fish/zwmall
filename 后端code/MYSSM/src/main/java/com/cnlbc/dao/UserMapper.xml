@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.cnlbc.dao.UserMapper">
+    <select id="findall" resultType="com.cnlbc.domain.User">
+        select * from user
+    </select>
+    <select id="findspecial" parameterType="com.cnlbc.domain.User" resultType="com.cnlbc.domain.User">
+        select * from user
+        <where>
+            <if test="id!=0">
+                and id = #{id}
+            </if>
+            <if test="username!=null">
+                and username = #{username}
+            </if>
+            <if test="password!=null">
+                and password = #{password}
+            </if>
+            <if test="name!=null">
+                and name = #{name}
+            </if>
+            <if test="phone!=null">
+                and phone = #{phone}
+            </if>
+            <if test="email!=null">
+                and email = #{email}
+            </if>
+            <if test="sex!=null">
+                and sex = #{sex}
+            </if>
+            <if test="Image!=null">
+                and Image = #{Image}
+            </if>
+            <if test="birth!=null">
+                and birth = #{birth}
+            </if>
+        </where>
+    </select>
+
+    <insert id="save" parameterType="com.cnlbc.domain.User">
+        insert into user VALUES(null ,#{username},#{password},#{name},#{phone},#{email},#{sex},#{Image},#{birth})
+    </insert>
+
+    <update id="updateuser" parameterType="com.cnlbc.domain.User">
+        update user set
+        <if test="username!=null">
+            username = #{username},
+        </if>
+        <if test="password!=null">
+            password = #{password},
+        </if>
+        <if test="name!=null">
+            name = #{name},
+        </if>
+        <if test="phone!=null">
+            phone = #{phone},
+        </if>
+        <if test="email!=null">
+            email = #{email},
+        </if>
+        <if test="sex!=null">
+            sex = #{sex},
+        </if>
+        <if test="Image!=null">
+            Image = #{Image}
+        </if>
+        <if test="birth!=null">
+            birth = #{birth},
+        </if>
+        id = #{id} where id = #{id}
+    </update>
+
+    <delete id="deleteuser" parameterType="com.cnlbc.domain.User">
+        delete  from user where id = #{id}
+    </delete>
+
+</mapper>

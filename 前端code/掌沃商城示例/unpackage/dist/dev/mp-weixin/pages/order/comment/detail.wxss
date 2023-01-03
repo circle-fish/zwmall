@@ -1,0 +1,138 @@
+@charset "UTF-8";
+/* 颜色变量 */
+/* 行为相关颜色 */
+/* 文字基本颜色 */
+/* 背景颜色 */
+/* 边框颜色 */
+/* 页面宽度 */
+.express-comment .main-wrap, .goods-comment .main-wrap, .goods-comment .main-wrap .right .top, .goods-comment .bottom-wrap, .goods-comment .bottom-wrap .right {
+  display: flex;
+  align-items: center;
+}
+.title {
+  font-size: 30px;
+  font-weight: bold;
+  color: #757575;
+  line-height: 68px;
+}
+.express-comment {
+  padding: 25px 0;
+}
+.express-comment .main-wrap .left {
+  margin-right: 50px;
+}
+.express-comment .main-wrap .left .rate {
+  margin: 10px 0;
+}
+.express-comment .main-wrap .right {
+  flex: 1;
+}
+.express-comment .btn-wrap {
+  display: flex;
+  justify-content: flex-end;
+  padding-top: 15px;
+}
+.goods-comment {
+  padding: 30px 0;
+  border-top: 1px solid #e0e0e0;
+}
+.goods-comment .main-wrap .thumb {
+  width: 120px;
+  height: 120px;
+  cursor: pointer;
+  border: 1px solid #e0e0e0;
+}
+.goods-comment .main-wrap .right {
+  flex: 1;
+  margin-left: 20px;
+}
+.goods-comment .main-wrap .right .top {
+  line-height: 40px;
+}
+.goods-comment .main-wrap .right .top .level {
+  margin-left: 15px;
+  color: #ffaa00;
+}
+.goods-comment .main-wrap .textarea-comment {
+  font-size: 14px;
+}
+.goods-comment .bottom-wrap {
+  padding-top: 15px;
+  justify-content: space-between;
+}
+.goods-comment .bottom-wrap .goods-name {
+  max-width: 120px;
+  color: #333;
+  text-align: center;
+  cursor: pointer;
+}
+.goods-comment .bottom-wrap .goods-name:hover {
+  color: #ff6700;
+}
+.goods-comment .bottom-wrap .right {
+  flex: 1;
+  margin-left: 20px;
+}
+.goods-comment .bottom-wrap .right .btn-upload {
+  width: 90px;
+  height: 90px;
+  line-height: 90px;
+  text-align: center;
+  cursor: pointer;
+  transition: all .3s;
+  margin-right: 15px;
+  background-color: #f5f5f5;
+}
+.goods-comment .bottom-wrap .right .btn-upload:hover {
+  background-color: #e0e0e0;
+}
+.goods-comment .bottom-wrap .right .btn-upload .icon {
+  color: #999;
+  font-size: 28px;
+}
+.goods-comment .bottom-wrap .right .photo {
+  width: 90px;
+  height: 90px;
+  cursor: pointer;
+  margin-right: 15px;
+}
+.goods-comment .bottom-wrap .right .btn {
+  margin-left: auto;
+}
+.comment-box {
+  position: relative;
+  padding: 20px;
+  padding-bottom: 30px;
+  border: 1px solid #e0e0e0;
+}
+.comment-box .textarea-comment {
+  width: 100%;
+  min-height: 30px;
+  font-size: 16px;
+  color: #333;
+}
+.comment-box .font-count {
+  position: absolute;
+  right: 10px;
+  bottom: 10px;
+  font-size: 12px;
+  color: #999;
+}
+.btn {
+  border: 1px solid #e0e0e0;
+  color: #757575;
+  text-align: center;
+  width: 100px;
+  height: 30px;
+  line-height: 30px;
+  margin: 0;
+  font-size: 12px;
+  cursor: pointer;
+  background-color: #ffffff;
+}
+.btn:hover {
+  color: #fff;
+  background-color: #ff6700;
+  border-color: #ff6700;
+}
+

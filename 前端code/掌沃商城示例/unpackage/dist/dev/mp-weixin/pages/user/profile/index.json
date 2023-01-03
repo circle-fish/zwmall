@@ -1,0 +1,8 @@
+{
+  "navigationBarTitleText": "个人信息 - 小米商城",
+  "usingComponents": {
+    "menu-wrapper": "/components/user/common/menu-wrapper",
+    "avatar-cropper": "/components/user/editer/avatar-cropper",
+    "profile-editer": "/components/user/editer/profile-editer"
+  }
+}

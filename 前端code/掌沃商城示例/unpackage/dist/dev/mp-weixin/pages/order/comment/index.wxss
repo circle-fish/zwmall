@@ -1,0 +1,96 @@
+@charset "UTF-8";
+/* 颜色变量 */
+/* 行为相关颜色 */
+/* 文字基本颜色 */
+/* 背景颜色 */
+/* 边框颜色 */
+/* 页面宽度 */
+.order-wrap .order .header-wrap .bottom, .order-wrap .order .header-wrap .bottom .left, .order-wrap .order .main-wrap, .order-wrap .order .main-wrap .left {
+  display: flex;
+  align-items: center;
+}
+.title {
+  font-size: 30px;
+  color: #757575;
+  line-height: 68px;
+}
+.order-wrap .order {
+  border: 1px solid #B0B0B0;
+  margin-bottom: 20px;
+}
+.order-wrap .order .header-wrap {
+  padding: 15px 30px;
+  border-bottom: 1px solid #e0e0e0;
+}
+.order-wrap .order .header-wrap .bottom {
+  justify-content: space-between;
+}
+.order-wrap .order .header-wrap .bottom .left {
+  color: #757575;
+  max-width: 600px;
+}
+.order-wrap .order .header-wrap .bottom .left .separator {
+  color: #e0e0e0;
+  margin: 0 .5rem;
+}
+.order-wrap .order .header-wrap .bottom .left .orderno {
+  display: inline-block;
+}
+.order-wrap .order .header-wrap .bottom .left .orderno:hover {
+  color: #ff6700;
+}
+.order-wrap .order .header-wrap .bottom .right {
+  color: #757575;
+}
+.order-wrap .order .header-wrap .bottom .right .amount {
+  font-size: 24px;
+  margin-right: 5px;
+}
+.order-wrap .order .main-wrap {
+  justify-content: space-between;
+  padding: 20px 30px;
+  padding-bottom: 0;
+}
+.order-wrap .order .main-wrap .left {
+  padding-top: 10px;
+  flex-wrap: wrap;
+}
+.order-wrap .order .main-wrap .left .goods {
+  margin-right: 10px;
+  margin-bottom: 10px;
+}
+.order-wrap .order .main-wrap .left .goods .thumb {
+  width: 80px;
+  height: 80px;
+}
+.order-wrap .order .main-wrap .left .tip {
+  color: #333;
+  font-size: 12px;
+  margin-left: 10px;
+  margin-bottom: 10px;
+}
+.order-wrap .order .main-wrap .right .btn {
+  color: #757575;
+  width: 118px;
+  height: 28px;
+  font-size: 13px;
+  line-height: 28px;
+  text-align: center;
+  cursor: pointer;
+  transition: all .3s;
+  margin-bottom: 5px;
+}
+.order-wrap .order .main-wrap .right .btn.btn-primary {
+  color: #FFFFFF;
+  background-color: #ff6700;
+}
+.order-wrap .order .main-wrap .right .btn:hover {
+  opacity: .8;
+}
+.empty-tip {
+  margin: 60px 0;
+  font-size: 18px;
+  text-align: center;
+  color: #b0b0b0;
+}
+

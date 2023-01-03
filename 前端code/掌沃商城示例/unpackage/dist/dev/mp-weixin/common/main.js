@@ -1,0 +1,13 @@
+(global["webpackJsonp"] = global["webpackJsonp"] || []).push([["common/main"],[
+/* 0 */
+/*!****************************************!*\
+  !*** E:/HBuilderX/save/掌沃商城示例/main.js ***!
+  \****************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+throw new Error("Module build failed (from ./node_modules/@dcloudio/webpack-uni-mp-loader/lib/main.js):\nError: Vue.component()需要两个参数\n    at CallExpression (E:\\HBuilderX\\plugins\\uniapp-cli\\node_modules\\@dcloudio\\webpack-uni-mp-loader\\lib\\babel\\global-component-traverse.js:38:19)\n    at NodePath._call (E:\\HBuilderX\\plugins\\uniapp-cli\\node_modules\\@babel\\traverse\\lib\\path\\context.js:55:20)\n    at NodePath.call (E:\\HBuilderX\\plugins\\uniapp-cli\\node_modules\\@babel\\traverse\\lib\\path\\context.js:42:17)\n    at NodePath.visit (E:\\HBuilderX\\plugins\\uniapp-cli\\node_modules\\@babel\\traverse\\lib\\path\\context.js:90:31)\n    at TraversalContext.visitQueue (E:\\HBuilderX\\plugins\\uniapp-cli\\node_modules\\@babel\\traverse\\lib\\context.js:112:16)\n    at TraversalContext.visitSingle (E:\\HBuilderX\\plugins\\uniapp-cli\\node_modules\\@babel\\traverse\\lib\\context.js:84:19)\n    at TraversalContext.visit (E:\\HBuilderX\\plugins\\uniapp-cli\\node_modules\\@babel\\traverse\\lib\\context.js:140:19)\n    at Function.traverse.node (E:\\HBuilderX\\plugins\\uniapp-cli\\node_modules\\@babel\\traverse\\lib\\index.js:84:17)\n    at NodePath.visit (E:\\HBuilderX\\plugins\\uniapp-cli\\node_modules\\@babel\\traverse\\lib\\path\\context.js:97:18)\n    at TraversalContext.visitQueue (E:\\HBuilderX\\plugins\\uniapp-cli\\node_modules\\@babel\\traverse\\lib\\context.js:112:16)\n    at TraversalContext.visitMultiple (E:\\HBuilderX\\plugins\\uniapp-cli\\node_modules\\@babel\\traverse\\lib\\context.js:79:17)\n    at TraversalContext.visit (E:\\HBuilderX\\plugins\\uniapp-cli\\node_modules\\@babel\\traverse\\lib\\context.js:138:19)\n    at Function.traverse.node (E:\\HBuilderX\\plugins\\uniapp-cli\\node_modules\\@babel\\traverse\\lib\\index.js:84:17)\n    at NodePath.visit (E:\\HBuilderX\\plugins\\uniapp-cli\\node_modules\\@babel\\traverse\\lib\\path\\context.js:97:18)\n    at TraversalContext.visitQueue (E:\\HBuilderX\\plugins\\uniapp-cli\\node_modules\\@babel\\traverse\\lib\\context.js:112:16)\n    at TraversalContext.visitSingle (E:\\HBuilderX\\plugins\\uniapp-cli\\node_modules\\@babel\\traverse\\lib\\context.js:84:19)");
+
+/***/ })
+],[[0,"common/runtime"]]]);
+//# sourceMappingURL=../../.sourcemap/mp-weixin/common/main.js.map

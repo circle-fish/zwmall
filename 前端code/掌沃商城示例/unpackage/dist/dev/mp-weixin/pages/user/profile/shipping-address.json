@@ -1,0 +1,7 @@
+{
+  "navigationBarTitleText": "收货地址 - 小米商城",
+  "usingComponents": {
+    "menu-wrapper": "/components/user/common/menu-wrapper",
+    "address-editer": "/components/user/editer/address-editer"
+  }
+}

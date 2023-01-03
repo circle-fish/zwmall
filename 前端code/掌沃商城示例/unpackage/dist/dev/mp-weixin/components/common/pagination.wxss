@@ -1,0 +1,47 @@
+@charset "UTF-8";
+/* 颜色变量 */
+/* 行为相关颜色 */
+/* 文字基本颜色 */
+/* 背景颜色 */
+/* 边框颜色 */
+/* 页面宽度 */
+.pagination-wrapper, .pagination-wrapper .page-numbers {
+  display: flex;
+  align-items: center;
+}
+.pagination-wrapper {
+  margin: 15px auto;
+  justify-content: center;
+}
+.pagination-wrapper .arrow, .pagination-wrapper .page-numbers .number {
+  width: 48px;
+  height: 24px;
+  padding: 3px 0;
+  margin: 0 7px;
+  line-height: 24px;
+  color: #b0b0b0;
+  cursor: pointer;
+  text-align: center;
+  transition: all .2s linear;
+}
+.pagination-wrapper .arrow:hover, .pagination-wrapper .page-numbers .number:hover {
+  background-color: #b0b0b0;
+  color: #fff;
+}
+.pagination-wrapper .arrow .icon {
+  font-size: 20px;
+  font-weight: bold;
+}
+.pagination-wrapper .page-numbers .number.active {
+  background-color: #757575;
+  color: #fff;
+  cursor: default;
+}
+.pagination-wrapper .page-numbers .number.more {
+  cursor: default;
+}
+.pagination-wrapper .page-numbers .number.more:hover {
+  background-color: transparent;
+  color: #b0b0b0;
+}
+

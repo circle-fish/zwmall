@@ -1,0 +1,7 @@
+{
+  "navigationBarTitleText": "我的订单 - 小米商城",
+  "usingComponents": {
+    "menu-wrapper": "/components/user/common/menu-wrapper",
+    "pagination": "/components/common/pagination"
+  }
+}

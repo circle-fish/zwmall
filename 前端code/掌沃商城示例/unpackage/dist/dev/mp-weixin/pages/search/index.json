@@ -1,0 +1,8 @@
+{
+  "navigationBarTitleText": "搜索 - 小米商城",
+  "usingComponents": {
+    "filter-list": "/components/search/filter-list",
+    "pagination": "/components/common/pagination",
+    "recommend": "/components/goods/recommend"
+  }
+}

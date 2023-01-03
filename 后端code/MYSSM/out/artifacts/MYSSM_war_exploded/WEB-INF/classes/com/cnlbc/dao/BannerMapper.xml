@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.cnlbc.dao.BannerMapper">
+    <select id="findspecial" resultType="com.cnlbc.domain.Banner">
+        select * from banner
+        <where>
+            <if test="id!=0">
+                and id = #{id}
+            </if>
+            <if test="goodsId!=0">
+                and goodsId = #{goodsId}
+            </if>
+            <if test="categoryId!=0">
+                and categoryId = #{categoryId}
+            </if>
+        </where>
+    </select>
+</mapper>

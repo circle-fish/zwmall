@@ -1,0 +1,83 @@
+@charset "UTF-8";
+/* 颜色变量 */
+/* 行为相关颜色 */
+/* 文字基本颜色 */
+/* 背景颜色 */
+/* 边框颜色 */
+/* 页面宽度 */
+.tool-wrapper {
+  position: fixed;
+  right: 0;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  z-index: 10;
+  display: none;
+}
+@media screen and (min-width: 1406px) {
+.tool-wrapper {
+    display: block !important;
+}
+}
+.tool-wrapper .tool {
+  display: block;
+  width: 82px;
+  height: 90px;
+  margin-top: -1px;
+  border: 1px solid #f5f5f5;
+  text-align: center;
+  background-color: #FFFFFF;
+}
+.tool-wrapper .tool:hover .name {
+  color: #ff6700;
+}
+.tool-wrapper .tool.btn-totop {
+  cursor: pointer;
+  margin-top: 14px;
+}
+.tool-wrapper .tool.btn-totop.onlyme {
+  margin-top: 500px;
+}
+.tool-wrapper .tool .icon {
+  width: 30px;
+  height: 30px;
+  margin-top: 18px;
+}
+.tool-wrapper .tool .name {
+  color: #757575;
+}
+.tool-wrapper .qrcode-popup::before, .tool-wrapper .qrcode-popup::after {
+  content: '';
+  position: absolute;
+  top: 20px;
+  border: 8px solid transparent;
+}
+.tool-wrapper .qrcode-popup {
+  position: absolute;
+  right: 100%;
+  top: 0;
+  margin-right: 15px;
+  padding: 14px;
+  background-color: #FFFFFF;
+  border: 1px solid #f5f5f5;
+}
+.tool-wrapper .qrcode-popup .qrcode {
+  width: 100px;
+  height: 100px;
+  margin: 6px auto 0;
+}
+.tool-wrapper .qrcode-popup .desc {
+  margin: 12px auto 0;
+  color: #757575;
+  text-align: center;
+  width: 82px;
+}
+.tool-wrapper .qrcode-popup::before {
+  right: -17px;
+  border-left-color: #f5f5f5;
+}
+.tool-wrapper .qrcode-popup::after {
+  right: -16px;
+  border-left-color: #FFFFFF;
+}
+

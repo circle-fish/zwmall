@@ -1,0 +1,138 @@
+@charset "UTF-8";
+/* 颜色变量 */
+/* 行为相关颜色 */
+/* 文字基本颜色 */
+/* 背景颜色 */
+/* 边框颜色 */
+/* 页面宽度 */
+.recommend-wrapper .wrap .box-footer, .recommend-wrapper .wrap .box-footer .item {
+  display: flex;
+  align-items: center;
+}
+.recommend-wrapper {
+  background-color: #f5f5f5;
+}
+.recommend-wrapper .wrap {
+  width: 1226px;
+  margin: 0 auto;
+  padding-bottom: 100px;
+}
+.recommend-wrapper .wrap .box-header::before, .recommend-wrapper .wrap .box-header::after {
+  position: absolute;
+  content: '';
+  border-top: 1px solid #e0e0e0;
+  top: 50%;
+  width: 30%;
+}
+.recommend-wrapper .wrap .box-header {
+  position: relative;
+  text-align: center;
+  margin-bottom: 20px;
+}
+.recommend-wrapper .wrap .box-header .title {
+  height: 50px;
+  font-size: 30px;
+  font-weight: 400;
+  color: #757575;
+}
+.recommend-wrapper .wrap .box-header::before {
+  left: 0;
+}
+.recommend-wrapper .wrap .box-header::after {
+  right: 0;
+}
+.recommend-wrapper .wrap .box-header.noline::before, .recommend-wrapper .wrap .box-header.noline::after {
+  border-top: none;
+}
+.recommend-wrapper .wrap .box-body {
+  width: 1226px;
+  overflow: hidden;
+}
+.recommend-wrapper .wrap .box-body .goodsList-wrap {
+  display: flex;
+  transition: -webkit-transform .5s;
+  transition: transform .5s;
+  transition: transform .5s, -webkit-transform .5s;
+}
+.recommend-wrapper .wrap .box-body .goodsList-wrap .goods {
+  flex-shrink: 0;
+  width: 232px;
+  height: 300px;
+  margin-right: 14px;
+  margin-bottom: 14px;
+  background-color: #ffffff;
+  text-align: center;
+}
+.recommend-wrapper .wrap .box-body .goodsList-wrap .goods:hover .comment-count {
+  display: none;
+}
+.recommend-wrapper .wrap .box-body .goodsList-wrap .goods:hover .btn-addcart {
+  display: block;
+}
+.recommend-wrapper .wrap .box-body .goodsList-wrap .goods .thumb {
+  width: 140px;
+  height: 140px;
+  cursor: pointer;
+  padding: 40px 0 15px;
+  height: 145px;
+}
+.recommend-wrapper .wrap .box-body .goodsList-wrap .goods .name {
+  color: #333;
+  max-width: 210px;
+  margin-bottom: 10px;
+  font-weight: 400;
+  cursor: pointer;
+  padding: 0 10px;
+}
+.recommend-wrapper .wrap .box-body .goodsList-wrap .goods .price {
+  margin-bottom: 10px;
+  color: #ff6700;
+}
+.recommend-wrapper .wrap .box-body .goodsList-wrap .goods .comment-count {
+  color: #757575;
+}
+.recommend-wrapper .wrap .box-body .goodsList-wrap .goods .btn-addcart {
+  border: 1px solid #ff6700;
+  background-color: #ffffff;
+  color: #ff6700;
+  width: 120px;
+  height: 28px;
+  line-height: 28px;
+  font-size: 12px;
+  margin: 0 auto;
+  cursor: pointer;
+  transition: all .3s;
+  display: none;
+}
+.recommend-wrapper .wrap .box-body .goodsList-wrap .goods .btn-addcart:hover {
+  background-color: #ff6700;
+  color: #FFFFFF;
+}
+.recommend-wrapper .wrap .box-footer {
+  justify-content: center;
+  margin-top: 10px;
+}
+.recommend-wrapper .wrap .box-footer .item {
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+  margin: 0 10px;
+  justify-content: center;
+}
+.recommend-wrapper .wrap .box-footer .item:hover .pager {
+  background-color: #ff6700;
+}
+.recommend-wrapper .wrap .box-footer .item.active {
+  cursor: default;
+}
+.recommend-wrapper .wrap .box-footer .item.active .pager {
+  background-color: transparent;
+  border: 2px solid #ff6700;
+}
+.recommend-wrapper .wrap .box-footer .item .pager {
+  width: 5px;
+  height: 5px;
+  background-color: #b0b0b0;
+  border-radius: 50%;
+}
+

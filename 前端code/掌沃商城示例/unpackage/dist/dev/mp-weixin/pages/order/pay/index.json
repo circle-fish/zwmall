@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText": "选择在线支付方式 - 小米商城",
+  "usingComponents": {
+    "mini-header": "/components/common/mini-header"
+  }
+}

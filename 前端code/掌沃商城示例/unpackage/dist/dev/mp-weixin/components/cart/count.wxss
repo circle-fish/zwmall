@@ -1,0 +1,45 @@
+@charset "UTF-8";
+/* 颜色变量 */
+/* 行为相关颜色 */
+/* 文字基本颜色 */
+/* 背景颜色 */
+/* 边框颜色 */
+/* 页面宽度 */
+.count-wrapper {
+  display: flex;
+  align-items: center;
+}
+.count-wrapper {
+  border: 1px solid #e0e0e0;
+  font-size: 16px;
+  text-align: center;
+  width: 150px;
+  height: 38px;
+}
+.count-wrapper .btn {
+  width: 39px;
+  height: 39px;
+  line-height: 39px;
+  color: #757575;
+  font-size: 20px;
+  transition: all .3s;
+  cursor: pointer;
+}
+.count-wrapper .btn.btn-subtract {
+  margin-left: -1px;
+}
+.count-wrapper .btn.btn-plus {
+  margin-right: -1px;
+}
+.count-wrapper .btn:hover {
+  background-color: #e0e0e0;
+}
+.count-wrapper .input-count {
+  width: 74px;
+  height: 38px;
+  line-height: 38px;
+  color: #424242;
+  font-size: 16px;
+  text-align: center;
+}
+
